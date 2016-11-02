@@ -1,0 +1,150 @@
+
+.nosotros-banner {
+  background-image: url(../img/quienes-somos/banner1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10% 2%;
+}
+
+
+.about {
+  padding: 35px 7%;
+  text-align: center;
+}
+.about h3 {
+  font-weight: bold;
+}
+
+.nosotros-middle-banner {
+  background-image: url(../img/quienes-somos/banner-middle.jpg);
+  background-size: cover;
+  height: 30vh;
+}
+
+.areas h4 {
+  text-align: center;
+  font-size: 1.2em;
+  color: #5A5A5A;
+}
+.areas img {
+  display: none;
+}
+
+.carousel {
+  margin-bottom: 140px;
+}
+.carousel-inner img {
+  width: 50%;
+  margin: auto;
+}
+.carousel-indicators {
+  position: absolute!important;
+  bottom: -90px!important;
+}
+.carousel-indicators li {
+  background-color: #9E9E9E!important;
+  border: none!important;
+  width: 15px!important;
+  height: 15px!important;
+  margin-right: 10px!important;
+}
+.carousel-indicators .active {
+  background-color: #00A788!important;
+}
+
+/*.nosotros-carousel {
+  text-align: center;
+}
+.nosotros-banner-carrusel {
+  height: 47vh;
+  background-image: url(../img/quienes-somos/carrusel1.jpg);
+  background-size: cover;
+}
+
+.carrusel-indicator-nosotros {
+  overflow: hidden;
+  display: inline-block;
+}
+.indicators {
+  background-color: grey;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  float: left;
+  margin:30px 6px;
+}*/
+
+@media (min-width:700px){
+
+.areas {
+  margin: 4% 0;
+}
+.areas h3 {
+  margin-top: 0;
+  margin-bottom: 4%;
+}
+.area-left {
+  padding-right: 20px;
+}
+.area3 {
+  padding-left: 20px;
+}
+
+.areas h4,
+.areas p {
+  text-align: left;
+  font-weight: normal;
+}
+
+.areas img {
+  display: inline;
+  height: 500px;
+}
+
+.area-flex{
+  display: flex;
+}
+
+/*.nosotros-banner-carrusel {
+  height: 34vh;
+  width: 70%;
+  margin: auto;
+
+}*/
+
+
+}
+@media (min-width:900px){
+
+  .nosotros-banner {
+    padding: 7%;
+  }
+  .nosotros-banner h2 {
+    font-size: 5em;
+    font-weight: bold;
+  }
+  .nosotros-banner h5 {
+    font-weight: bold;
+  }
+
+  .about h3 {
+    font-size: 2.5em;
+  }
+  .about p {
+    text-align: center;
+  }
+
+  .nosotros-middle-banner {
+    height: 70vh;
+    background-attachment: fixed;
+  }
+  /*.nosotros-banner-carrusel {
+    height: 70vh;
+    width: 50%;
+  }*/
+
+  .areas h4 {
+    font-size: 1.8em;
+    margin: 5% 0;
+  }
+}

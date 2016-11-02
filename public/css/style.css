@@ -1,0 +1,395 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif!important;
+}
+.container {
+  overflow: hidden;
+  padding: 0!important;
+  margin: auto;
+  width: 100%!important;
+  max-width: 1400px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+/******** Header ************/
+.main-header {
+  background-color: #00C09C;
+  overflow: hidden;
+  padding: 10px;
+  margin-bottom: 1px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-logo {
+  width: 51%;
+  max-width: 250px;
+  float: left;
+}
+
+.toggle-nav {
+  font-size: 2em;
+  color: #FFFFFF;
+  float: right;
+  margin-right: 15px;
+}
+
+.main-nav {
+  clear: both;
+  margin-top: 60px;
+  display: none;
+}
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  padding: 1em;
+  display: block;
+  text-transform: uppercase;
+  border-bottom: solid 1px white;
+}
+.main-nav .last-li-nav {
+  /*this is for elminate the space and the border when de toggle-nav is show*/
+  margin-bottom: -2.5%;
+  border-bottom: 0;
+}
+
+
+
+
+
+
+/********Home Main Carousel && Nosotros Main Banner Section 1************/
+.all-banners{
+  position: relative;
+  overflow: hidden;
+}
+.all-banners ul, .all-banners il {
+  position: relative;
+}
+.all-banners li {
+  right: -100%;
+  width: 100%;
+}
+
+.main-banner {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 36% 2% 23%;
+  background-image: url(../img/home/carrusel1.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: 60% 0%;
+}
+
+#main-banner2{
+  background-image: url(../img/home/carrusel2.jpg);
+}
+#main-banner3{
+  background-image: url(../img/home/carrusel3.jpg);
+}
+
+.main-banner h2,
+.nosotros-banner h2 {
+  font-size: 1.7em;
+  line-height: 1em;
+  margin: 0;
+  font-weight: bold;
+}
+.main-banner h5,
+.nosotros-banner h5 {
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.inter-banner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.nosotros-banner {
+  background-image: url(../img/quienes-somos/banner1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10% 2%;
+}
+
+.flecha {
+  position: absolute;
+  margin-top: 38%;
+  z-index: 3;
+  cursor: pointer;
+}
+.flecha-izq {
+  margin-left: 2%;
+}
+.flecha-der {
+  right: 0;
+  margin-right: 2%;
+}
+
+
+.button-banner {
+  color: #00c09c;
+  background-color: white;
+  border: 0;
+  border-radius: 13px;
+  width: 160px;
+  height: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 30px;
+}
+
+
+
+
+/******** Home Skills && Nosotros About Section 2 ************/
+.skills-section {
+  padding: 0 12.5%;
+}
+
+.skills-articles {
+  text-align: center;
+  color: #4A4A4A;
+  padding-top: 30px;
+}
+
+.skills-articles img {
+  width: 95px;
+}
+
+.skills-articles h4 {
+  margin: 3px;
+  font-size: 1.33333333333em;
+}
+
+.about {
+  padding: 35px 7%;
+  text-align: center;
+}
+.about h3 {
+  font-weight: bold;
+}
+
+
+
+
+
+/********Home Category Products && Nosotro Middle Banner Section 3 ************/
+.home-products {
+  text-align: center;
+  background-color: #C3C3C3;
+  padding: 35px 0;
+}
+.home-products h3,
+.about h3 {
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 1.9em;
+  color: #4E4E4E;
+}
+
+.img-category {
+  width: 100%;
+}
+
+.category-products {
+  width: 256px;
+  margin:20px auto;
+  text-align: center;
+  cursor: pointer;
+}
+.category-title {
+  color: white;
+  background-color: #00be9c;
+  margin-top: -4px;
+  padding: 1% 0;
+}
+.category-title h4 {
+  margin: 0;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nosotros-middle-banner {
+  background-image: url(../img/quienes-somos/banner-middle.jpg);
+  background-size: cover;
+  height: 30vh;
+}
+
+
+
+
+/******** Home Testimony && Nosotros Areas Section 4 ************/
+.testimony {
+  padding: 0 25px;
+  margin-bottom: 40px;
+}
+.testimony h3,
+.areas h3 {
+  text-align: center;
+  color: #00be9c;
+  font-size: 1.7em;
+}
+.img-testimony {
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+}
+.testimony p,
+.about p {
+  color: #5A5A5A;
+  text-align: justify;
+}
+.testimony p:nth-of-type(2){
+  color: #ff336d;
+}
+
+.areas h4 {
+  text-align: center;
+  font-size: 1.2em;
+  color: #5A5A5A;
+}
+.areas img {
+  display: none;
+}
+
+
+
+
+
+/******** Home Banner Botton && Nosotros Carousel Section 5 ************/
+hr {
+  width: 80%;
+  color: #c3c3c3;
+}
+
+.foot-banner {
+  height: 70vh;
+  background-image: url(../img/home/banner-footer.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.carousel {
+  margin-bottom: 140px;
+}
+.carousel-inner img {
+  width: 50%;
+  margin: auto;
+}
+.carousel-indicators {
+  position: absolute!important;
+  bottom: -90px!important;
+}
+.carousel-indicators li {
+  background-color: #9E9E9E!important;
+  border: none!important;
+  width: 15px!important;
+  height: 15px!important;
+  margin-right: 10px!important;
+}
+.carousel-indicators .active {
+  background-color: #00A788!important;
+}
+
+
+
+
+/******** Contact Form Section 6 ************/
+
+.contact {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+.contact h3 {
+  text-align: center;
+  font-size: 1.9em;
+  color: #4e4e4e;
+}
+
+#contactForm {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#contactForm input, textarea{
+  border: solid 2px #c0c0c0;
+  height: 35px;
+  width: 100%;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+#contactForm textarea {
+  height: 116px;
+  resize: none;
+}
+#contactForm #submit-button {
+  color: #00be9c;
+  background-color: white;
+  border: 3px solid #00be9c;
+  width: 80px;
+  cursor: pointer;
+}
+
+.location div {
+  color: #5A5A5A;
+  margin-bottom: 5px;
+}
+.location img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+/******** Footer ************/
+.main-footer {
+  background-color: #00be9c;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.main-footer img{
+  width: 40vh;
+  max-width: 200px;
+  margin: 20px;
+}
+.main-footer .socials img {
+  width: 7vh;
+  max-width: 40px;
+  margin: 3px;
+}
+.main-footer p {
+  margin: 0;
+  font-size: 0.7em;
+  color: white;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.main-footer span{
+  font-weight: normal;
+}

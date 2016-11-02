@@ -1,0 +1,345 @@
+@media (min-width:320px){
+
+/********Home Main Carousel && Nosotros Main Banner Section 1************/
+  .main-banner {
+    padding: 38% 2%;
+  }
+
+  .flecha {
+    padding-top: 10px;
+  }
+
+  .main-banner h2,
+  .nosotros-banner h2 {
+    font-size: 2.2em;
+  }
+  .main-banner h5,
+  .nosotros-banner h5 {
+    font-size: 0.8em;
+  }
+
+}
+
+
+@media (min-width: 600px){
+
+  .main-header,
+  .skills-section,
+  .home-products,
+  .testimony,
+  .contact {
+    padding: 6% 5%;
+  }
+
+/******** Header ************/
+  .main-header {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    position: relative;
+  }
+
+  .toggle-nav {
+    display: none;
+  }
+
+  .main-nav {
+  }
+  .main-nav a {
+    border: none;
+  }
+  .main-nav li {
+    float: left;
+  }
+
+  .main-nav {
+    display: block!important;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 5%;
+    padding-bottom: 1%;
+  }
+  .main-nav a {
+    padding: 0 1em;
+  }
+  .last-li-nav {
+    padding-right: 0 !important;
+  }
+
+
+/********Home Main Carousel && Nosotros Main Banner Section 1************/
+  .main-banner {
+    padding: 24% 5%;
+  }
+
+  .flecha {
+    margin-top: 24%;
+  }
+  .flecha-izq {
+    margin-left: 5%;
+  }
+  .flecha-der {
+    margin-right: 5%;
+  }
+
+
+/********Home Category Products && Nosotro Middle Banner Section 3 ************/
+  .home-products {
+    padding-bottom: 11%;
+  }
+
+
+  .category {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .category-products {
+    width: 30%;
+    margin: 0;
+  }
+  .category-title {
+    padding: 3% 0;
+  }
+  .category-title h4 {
+    font-size: 1em;
+  }
+}
+
+
+@media (min-width: 700px){
+
+/********Home Main Carousel && Nosotros Main Banner Section 1************/
+  .main-banner {
+    background-size: initial;
+    height: auto;
+  }
+
+
+  .div-title1 h2,
+  .nosotros-banner h2 {
+    font-size: 4.2em;
+  }
+
+/******** Home Skills && Nosotros About Section 2 ************/
+  .skills-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .skills-articles {
+    width: 25%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+/******** Home Testimony && Nosotros Areas Section 4 ************/
+  .testimony {
+    overflow: hidden;
+  }
+  .testimony-p-1 {
+    float: right;
+    width: 65%;
+  }
+
+  .areas {
+    margin: 4% 0;
+  }
+  .areas h3 {
+    margin-top: 0;
+    margin-bottom: 4%;
+  }
+  .area-left {
+    padding-right: 20px;
+  }
+  .area3 {
+    padding-left: 20px;
+  }
+
+  .areas h4,
+  .areas p {
+    text-align: left;
+    font-weight: normal;
+  }
+
+  .areas img {
+    display: inline;
+    height: 500px;
+  }
+
+  .area-flex{
+    display: flex;
+  }
+
+
+
+/******** Contact Form Section 6 ************/
+  .contact {
+    overflow: hidden;
+  }
+  #contactForm {
+    width: 50%;
+    float: left;
+  }
+  .location {
+    width: 40%;
+    float: right;
+  }
+  .location div {
+    margin-bottom: 15px;
+  }
+}
+
+/*@media (min-height:700px) {
+
+.main-banner {
+  height: 65vh;
+}
+.main-banner h5 {
+  margin-bottom: 52px;
+}
+
+}*/
+
+@media (min-width:900px){
+
+  .main-header,
+  .skills-section,
+  .home-products,
+  .testimony,
+  .contact,
+  .about,
+  .areas {
+    padding-left: 14% !important;
+    padding-right: 14% !important;
+  }
+
+
+
+/******** Header ************/
+  .main-nav {
+    padding-right: 14%;
+  }
+
+
+/********Home Main Carousel && Nosotros Main Banner Section 1************/
+  .main-banner {
+    padding:14% 14% 5%;
+    background-size: cover;
+    background-position: 39% 0;
+    height: 0%;
+  }
+
+  .flecha {
+    margin-top: 14%;
+  }
+  .flecha-izq {
+    margin-left: 14%;
+  }
+  .flecha-der {
+    margin-right: 14%;
+  }
+
+  .div-title1{
+    /*margin-top: 4%;
+    padding: 11%;*/
+  }
+  .div-title1 h2,
+  .nosotros-banner h2{
+    line-height: 0.8em;
+    font-size: 5.46666666667em;
+    margin: 0;
+  }
+  .div-title1 h5,
+  .nosotros-banner h5 {
+    font-size: 1.33333333333em;
+  }
+  .button-banner {
+    font-size: 1.33333333333em;
+    width: 200px;
+    height: 40px;
+  }
+
+  .nosotros-banner {
+    padding: 7%;
+  }
+  .nosotros-banner h2 {
+    font-size: 5em;
+    font-weight: bold;
+  }
+  .nosotros-banner h5 {
+    font-weight: bold;
+  }
+
+/******** Home Skills && Nosotros About Section 2 ************/
+
+  .about h3 {
+    font-size: 2.5em;
+  }
+  .about p {
+    text-align: center;
+  }
+
+/********Home Category Products && Nosotro Middle Banner Section 3 ************/
+  .home-products h3,
+  .contact h3 {
+    margin-bottom: 70px;
+    font-size: 2.53333333333em;
+  }
+  .category-title h4 {
+    font-size: 1.3em;
+  }
+
+  .nosotros-middle-banner {
+    height: 70vh;
+    background-attachment: fixed;
+  }
+
+
+/******** Home Testimony && Nosotros Areas Section 4 ************/
+  .img-testimony {
+    margin-right: 0;
+    margin-top: -3%;
+    width: 25%;
+  }
+  .testimony-p-1 {
+    width: 74%;
+  }
+
+  .areas h4 {
+    font-size: 1.8em;
+    margin: 5% 0;
+  }
+
+/******** Home Banner Botton && Nosotros Carousel Section 5 ************/
+  hr {
+    display: none;
+  }
+  .foot-banner {
+    display: inherit;
+  }
+}
+
+@media (min-height:900px) {
+
+  .foot-banner,
+  .nosotros-middle-banner {
+    height: 50vh !important;
+  }
+  .nosotros-middle-banner {
+    background-attachment: inherit!important;
+  }
+  /*.nosotros-banner-carrusel {
+    height: 53vh;*/
+
+}
+@media (min-height:1100px){
+  .foot-banner,
+  .nosotros-middle-banner {
+    height: 30vh !important;
+  }
+  .nosotros-middle-banner {
+    background-attachment: inherit!important;
+  }
+
+}
