@@ -2,7 +2,8 @@
   <a href="{{route('home')}}"><img src="img/home/logo.png" alt="tecniprax" class="main-logo"></a>
 
   <a href="#" class="toggle-nav">
-    <span class="ion-navicon-round"></span>
+    {{-- <span class="glyphicon glyphicon-menu-hamburger"></span> --}}
+    <img src="img/menuWhite.png" alt="" />
   </a>
 
   <nav class="main-nav">

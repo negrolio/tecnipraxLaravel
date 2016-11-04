@@ -190,17 +190,6 @@
   }
 }
 
-/*@media (min-height:700px) {
-
-.main-banner {
-  height: 65vh;
-}
-.main-banner h5 {
-  margin-bottom: 52px;
-}
-
-}*/
-
 @media (min-width:900px){
 
   .main-header,
@@ -209,7 +198,8 @@
   .testimony,
   .contact,
   .about,
-  .areas {
+  .areas,
+  .product-banner {
     padding-left: 14% !important;
     padding-right: 14% !important;
   }
@@ -222,7 +212,8 @@
   }
 
 
-/********Home Main Carousel && Nosotros Main Banner Section 1************/
+  /********Home Main Carousel && Nosotros Main Banner************/
+  /********Product Banner*************/ /************Section 1************/
   .main-banner {
     padding:14% 14% 5%;
     background-size: cover;
@@ -269,6 +260,28 @@
   }
   .nosotros-banner h5 {
     font-weight: bold;
+  }
+
+  .product-banner {
+    background-image: url(../img/productos/cabecera.jpg);
+    background-size: cover;
+    padding: 2% 14%;
+    text-align: center;
+    color: white;
+  }
+  .product-banner h4 {
+    margin-top: 0;
+    margin-bottom: 2%;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .skills-section-products {
+    display: flex;
+    justify-content: space-around;
+  }
+  .skills-articles-products {
+
   }
 
 /******** Home Skills && Nosotros About Section 2 ************/
@@ -329,8 +342,6 @@
   .nosotros-middle-banner {
     background-attachment: inherit!important;
   }
-  /*.nosotros-banner-carrusel {
-    height: 53vh;*/
 
 }
 @media (min-height:1100px){

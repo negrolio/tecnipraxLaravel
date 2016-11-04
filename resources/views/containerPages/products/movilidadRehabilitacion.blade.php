@@ -1,5 +1,1 @@
-@extends('htmlBase')
-
-@section('containerPage')
-
-@endsection
+@extends('containerPages/products/productBase')

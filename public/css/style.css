@@ -2,10 +2,13 @@
   box-sizing: border-box;
 }
 
+
 body {
+  url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg')
   margin: 0;
   font-size: 15px;
   font-family: 'Montserrat', sans-serif!important;
+  background-color: white;
 }
 .container {
   overflow: hidden;
@@ -44,6 +47,10 @@ ul {
   color: #FFFFFF;
   float: right;
   margin-right: 15px;
+  width: 10%;
+}
+.toggle-nav img {
+  width: 100%;
 }
 
 .main-nav {
@@ -71,7 +78,8 @@ ul {
 
 
 
-/********Home Main Carousel && Nosotros Main Banner Section 1************/
+/********Home Main Carousel && Nosotros Main Banner************/
+/********Product Banner*************/ /************Section 1************/
 .all-banners{
   position: relative;
   overflow: hidden;
@@ -157,8 +165,22 @@ ul {
   margin: 30px;
 }
 
+/*.product-banner {
+  background-image: url(../img/productos/cabecera.jpg);
+  text-align: center;
+  color: white;
+}
+.product-banner h4 {
+  margin: 0
+}
 
+.skills-section-products {
+  display: flex;
+  justify-content: space-around;
+}
+.skills-articles-products {
 
+}*/
 
 /******** Home Skills && Nosotros About Section 2 ************/
 .skills-section {
