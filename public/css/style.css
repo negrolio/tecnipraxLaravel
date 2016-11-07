@@ -182,7 +182,11 @@ ul {
 
 }*/
 
-/******** Home Skills && Nosotros About Section 2 ************/
+
+
+/******** Home Skills && Nosotros About
+/******** Product Catalogo **********Section 2 ************/
+
 .skills-section {
   padding: 0 12.5%;
 }
@@ -210,6 +214,65 @@ ul {
   font-weight: bold;
 }
 
+.catalogo-container h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.containerProducts,
+.buttons-catalogo-product {
+  width: 80%;
+  margin: auto;
+}
+.containerProducts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.catalogo-product {
+    width: 32%;
+    padding: 0.5%;
+    margin-top: 2%;
+    background-color: #E3E3E3;
+}
+
+.catalogo-product img {
+  width: 100%;
+}
+.catalogo-product-title,
+.catalogo-container {
+  color: #585858;
+}
+.catalogo-product-title {
+  padding: 4%;
+}
+.catalago-product-title h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.buttons-catalogo-product {
+  display: flex;
+  padding: 2% 0;
+}
+.button-catalogo-page {
+  margin-right: 0.5%;
+  width: 30px;
+}
+.button-catalogo-next {
+  margin-left: auto;
+}
+.button-catalogo-page,
+.button-catalogo-next {
+  background-color: #585858;
+  color: white;
+  border: none;
+  padding: 5px;
+  font-weight: bold;
+}
 
 
 

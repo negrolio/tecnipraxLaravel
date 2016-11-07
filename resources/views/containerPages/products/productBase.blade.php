@@ -22,8 +22,8 @@
 
 </section>
 
-<section class="catalogo-main">
-
+<section class="catalogo-container">
+  @yield('sectionShowProducts')
 </section>
 
 @endsection

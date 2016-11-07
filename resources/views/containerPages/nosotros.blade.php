@@ -1,5 +1,9 @@
 @extends('htmlBase')
 
+@section('title')
+  Nosotros
+@endsection
+
 @section('containerPage')
 
   <div class="containerPages">
