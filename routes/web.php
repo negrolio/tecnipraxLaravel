@@ -17,6 +17,7 @@
 
 Route::get('/', 'viewController@showHome')->name('home');
 Route::get('/nosotros', 'viewController@showNosotros')->name('nosotros');
-Route::get('/movilidad&rehabilitacion', 'viewController@showProductMoviRehab')->name('productMoviRehab');
-Route::get('/ortopedia&protesis', 'viewController@showProductOrtoProt')->name('productOrtoPro');
-Route::get('/cirugia&implantes', 'viewController@showProductCiruImpla')->name('productCiruImpla');
+Route::get('/movilidad&rehabilitacion', 'ProductContainerController@showProductMoviRehab')->name('productMoviRehab');
+Route::get('/ortopedia&protesis', 'ProductContainerController@showProductOrtoProt')->name('productOrtoPro');
+Route::get('/cirugia&implantes', 'ProductContainerController@showProductCiruImpla')->name('productCiruImpla');
+Route::get('/producto/{id}', 'ProductController@showProduct')->name('product');

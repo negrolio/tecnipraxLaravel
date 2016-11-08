@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+// use App\Product;
 
 class viewController extends Controller
 {
@@ -12,13 +13,11 @@ class viewController extends Controller
     public function showNosotros(){
       return view('containerPages/nosotros');
     }
-    public function showProductMoviRehab(){
-      return view('containerPages/products/movilidadRehabilitacion');
-    }
-    public function showProductOrtoProt(){
-      return view('containerPages/products/ortopediaProtesis');
-    }
-    public function showProductCiruImpla(){
-      return view('containerPages/products/cirugiaImplantes');
-    }
+    // public function showProductMoviRehab(){
+    //
+    //   $productos = Product::all();
+    //
+    //   return view('containerPages/products/movilidadRehabilitacion')
+    //             ->with('products',$productos);
+    // }
 }
