@@ -8,9 +8,10 @@ body {
   margin: 0;
   font-size: 15px;
   font-family: 'Montserrat', sans-serif!important;
-  background-color: white;
+  background-image: url(../img/cork-wallet.png);
 }
 .container {
+  background-color: white;
   overflow: hidden;
   padding: 0!important;
   margin: auto;
@@ -26,7 +27,7 @@ a:hover {
 /******** Header ************/
 .main-header {
   background-color: #00C09C;
-  overflow: hidden;
+  /*overflow: hidden;*/
   padding: 10px;
   margin-bottom: 1px;
 }
@@ -67,12 +68,39 @@ ul {
   text-transform: uppercase;
   border-bottom: solid 1px white;
 }
+.main-nav a:hover {
+  color:#008cd4;
+}
 .main-nav .last-li-nav {
   /*this is for elminate the space and the border when de toggle-nav is show*/
   margin-bottom: -2.5%;
   border-bottom: 0;
 }
 
+.catalogo-dropdown {
+  position: relative;
+}
+.catalogo-dropdown ul {
+  position: absolute;
+  z-index: 2;
+  background-color: #00c09c;
+  border: 1px solid white;
+  border-radius: 1%;
+  border-top: 0;
+  margin-top: 10%;
+  display: none;
+}
+
+.catalogo-dropdown ul li {
+  border-bottom: 1px solid white;
+}
+.catalogo-dropdown ul li:last-child {
+  border-bottom:0;
+}
+.catalogo-dropdown ul li:hover{
+  /*background-color: #00BCD4;*/
+  color:#008cd4;
+}
 
 
 
@@ -186,6 +214,7 @@ ul {
 
 /******** Home Skills && Nosotros About
 /******** Product Catalogo **********Section 2 ************/
+/******** Product *********/
 
 .skills-section {
   padding: 0 12.5%;
@@ -214,11 +243,13 @@ ul {
   font-weight: bold;
 }
 
-.catalogo-container h2 {
+.catalogo-container h2,
+.containerProduct h2 {
   text-align: center;
   font-weight: bold;
   font-size: 2.5em;
   text-transform: uppercase;
+  color: #4e4e4e;
 }
 
 .containerProducts,
@@ -274,7 +305,13 @@ ul {
   font-weight: bold;
 }
 
-
+.product-description h2 {
+  color: #00c09c;
+  text-align: center;
+}
+.product-description p {
+  text-align: center;
+}
 
 
 /********Home Category Products && Nosotro Middle Banner Section 3 ************/

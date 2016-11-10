@@ -9,30 +9,24 @@ class ProductContainerController extends Controller
 {
     public function showProductMoviRehab(){
 
-      $title = 'Movilidad y Rehabilitación';
-      $productos = Product::all();
+      $productos = Product::where('categoria', '=', 'Movilidad y Rehabilitación')->get();
 
       return view('containerPages/products/catalogContainer')
-                ->with('products',$productos)
-                ->with('title',$title);
+                ->with('products',$productos);
     }
 
     public function showProductOrtoProt(){
 
-      $title = 'Ortopedia y Prótesis';
-      $productos = Product::all();
+      $productos = Product::where('categoria', '=', 'Ortopedia y Prótesis')->get();
 
       return view('containerPages/products/catalogContainer')
-                ->with('products',$productos)
-                ->with('title',$title);
+                ->with('products',$productos);
     }
 
     public function showProductCiruImpla(){
-      $title = 'Cirugía e Implantes';
-      $productos = Product::all();
+      $productos = Product::where('categoria', '=', 'Cirugía e Implantes')->get();
 
       return view('containerPages/products/catalogContainer')
-                ->with('products',$productos)
-                ->with('title',$title);
+                ->with('products',$productos);
     }
 }

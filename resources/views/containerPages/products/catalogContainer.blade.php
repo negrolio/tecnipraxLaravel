@@ -2,11 +2,11 @@
 
 
 @section('title')
-  {{$title}}
+  {{$products[0]->categoria}}
 @endsection
 
 @section('sectionShowProducts')
-  <h2>{{$title}}</h2>
+  <h2>{{$products[0]->categoria}}</h2>
 
   <section>
     <div class="containerProducts">
