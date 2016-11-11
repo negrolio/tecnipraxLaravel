@@ -9,7 +9,7 @@ class ProductContainerController extends Controller
 {
     public function showProductMoviRehab(){
 
-      $productos = Product::where('categoria', '=', 'Movilidad y Rehabilitación')->get();
+      $productos = Product::where('category', '=', 'Movilidad y Rehabilitación')->get();
 
       return view('containerPages/products/catalogContainer')
                 ->with('products',$productos);
@@ -17,14 +17,14 @@ class ProductContainerController extends Controller
 
     public function showProductOrtoProt(){
 
-      $productos = Product::where('categoria', '=', 'Ortopedia y Prótesis')->get();
+      $productos = Product::where('category', '=', 'Ortopedia y Prótesis')->get();
 
       return view('containerPages/products/catalogContainer')
                 ->with('products',$productos);
     }
 
     public function showProductCiruImpla(){
-      $productos = Product::where('categoria', '=', 'Cirugía e Implantes')->get();
+      $productos = Product::where('category', '=', 'Cirugía e Implantes')->get();
 
       return view('containerPages/products/catalogContainer')
                 ->with('products',$productos);

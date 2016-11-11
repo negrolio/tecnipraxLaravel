@@ -1,12 +1,12 @@
 @extends('htmlBase')
 
 @section('title')
-  {{$product->nombre}}
+  {{$product->name}}
 @endsection
 
 @section('containerPage')
   <section class="containerProduct">
-    <h2>{{$product->categoria}}</h2>
+    <h2>{{$product->category}}</h2>
 
     <section id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -20,19 +20,19 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="/{{$product->imagen_url}}" alt="">
+          <img src="/{{$product->img_url}}" alt="">
         </div>
 
         <div class="item">
-          <img src="/{{$product->imagen_url}}" alt="">
+          <img src="/{{$product->img_url}}" alt="">
         </div>
 
         <div class="item">
-          <img src="/{{$product->imagen_url}}" alt="">
+          <img src="/{{$product->img_url}}" alt="">
         </div>
 
         <div class="item">
-          <img src="/{{$product->imagen_url}}" alt="">
+          <img src="/{{$product->img_url}}" alt="">
         </div>
       </div>
 
@@ -41,8 +41,8 @@
     </section>
 
     <section class="product-description">
-      <h2>{{$product->nombre}}</h2>
-      <p>{{$product->descripcion}}</p>
+      <h2>{{$product->name}}</h2>
+      <p>{{$product->description}}</p>
     </section>
 
     @include('containerPages.contactForm')

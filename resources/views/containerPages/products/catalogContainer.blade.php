@@ -2,11 +2,11 @@
 
 
 @section('title')
-  {{$products[0]->categoria}}
+  {{$products[0]->category}}
 @endsection
 
 @section('sectionShowProducts')
-  <h2>{{$products[0]->categoria}}</h2>
+  <h2>{{$products[0]->category}}</h2>
 
   <section>
     <div class="containerProducts">
@@ -14,10 +14,10 @@
       @forelse ($products as $product)
         <article class="catalogo-product">
           <a href="{{route('product',$product->id)}}">
-            <img src="{{$product->imagen_url }}" alt="producto" />
+            <img src="{{$product->img_url }}" alt="producto" />
             <div class="catalogo-product-title">
-              <h4>{{$product->nombre }}</h4>
-              <p>{{$product->descripcion}}</p>
+              <h4>{{$product->name }}</h4>
+              <p>{{$product->description}}</p>
             </div>
           </a>
         </article>
