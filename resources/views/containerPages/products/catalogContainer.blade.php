@@ -6,42 +6,27 @@
 @endsection
 
 @section('sectionShowProducts')
-  <h2>{{$products[0]->category}}</h2>
+  @foreach ($products->chunk(6) as $someProducts)
+      <div class="posts posts-page">
+          @include('containerPages.products.listado', ['products' => $someProducts])
+      </div>
+      <hr style="width:100px;color:black">
+  @endforeach
 
-  <section>
-    <div class="containerProducts">
+  @for ($i=0; $i < $products->count()/6 ; $i++)
+    <button class="button-catalogo-page">
+      {{$i + 1}}
+    </button>
+  @endfor
 
-      @forelse ($products as $product)
-        <article class="catalogo-product">
-          <a href="{{route('product',$product->id)}}">
-            <img src="{{$product->img_url }}" alt="producto" />
-            <div class="catalogo-product-title">
-              <h4>{{$product->name }}</h4>
-              <p>{{$product->description}}</p>
-            </div>
-          </a>
-        </article>
-
-      @empty
-        <div class="not-products">
-          <h3>Ups! parece que no podemos mostrar los productos en este momento</h3>
-        </div>
-      @endforelse
-      <?php echo $products->render(); ?>
-
+  {{--
+    <div class="buttons-catalogo-product">
+      {{-- <button class="button-catalogo-page">
+        2
+        Siguiente
+      </button>
     </div>
-  </section>
+    --}}
 
-  <div class="buttons-catalogo-product">
-    <button class="button-catalogo-page">
-      1
-    </button>
-    <button class="button-catalogo-page">
-      2
-    </button>
-    <button class="button-catalogo-next">
-      Siguiente
-    </button>
 
-  </div>
-@endsection
+ @endsection

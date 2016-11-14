@@ -9,6 +9,8 @@ jQuery(document).ready(function ($) {
 	})
 
 
+
+
 	//
 	// // variable pasa setear el TimeOut
 	// var retardo
@@ -32,8 +34,40 @@ jQuery(document).ready(function ($) {
 	// 		})
 	// 	}
 	//})
+	$(document).on('click', '.pagination a', function (e) {
+		getPosts($(this).attr('href').split('page=')[1]);
+		e.preventDefault();
+	});
+
 })
 
+$(window).on('hashchange', function() {
+        if (window.location.hash) {
+            var page = window.location.hash.replace('#', '');
+            if (page == Number.NaN || page <= 0) {
+                return false;
+            } else {
+                getPosts(page);
+            }
+        }
+    });
+
+    function getPosts(page) {
+
+console.log(  $.ajax({
+			url : '/productos?page=' + page,
+			dataType: 'json',
+	}))
+
+        $.ajax({
+            url : '/productos?page=' + page,
+        }).done(function (data) {
+            $('.posts .current-page').html(data);
+            location.hash = page;
+        }).fail(function () {
+            alert('Posts could not be loaded.');
+        });
+    }
 
 
 })()

@@ -9,10 +9,12 @@ class ProductContainerController extends Controller
 {
     public function showProductMoviRehab(){
 
-      $productos = Product::where('category', '=', 'Movilidad y Rehabilitación')->simplePaginate(6);
+      $productos = Product::where('category', '=', 'Movilidad y Rehabilitación')->get();
 
       return view('containerPages/products/catalogContainer')
                 ->with('products',$productos);
+
+
     }
 
     public function showProductOrtoProt(){
