@@ -23,9 +23,11 @@
         </article>
 
       @empty
-
+        <div class="not-products">
+          <h3>Ups! parece que no podemos mostrar los productos en este momento</h3>
+        </div>
       @endforelse
-
+      <?php echo $products->render(); ?>
 
     </div>
   </section>
