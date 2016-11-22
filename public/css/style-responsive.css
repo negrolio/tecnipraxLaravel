@@ -123,6 +123,9 @@
 
 /******** Home Skills && Nosotros About Section 2 ************/
   .skills-section {
+    text-align: center;
+  }
+  .skills-flex {
     display: flex;
     justify-content: space-between;
   }
@@ -174,16 +177,16 @@
 
 
 /******** Contact Form Section 6 ************/
-  .contact {
-    overflow: hidden;
+
+  .contact-article-flex{
+    display: flex;
+    justify-content: space-around;
   }
   #contactForm {
     width: 50%;
-    float: left;
   }
   .location {
-    width: 40%;
-    float: right;
+    width: 24%;
   }
   .location div {
     margin-bottom: 15px;
@@ -199,7 +202,8 @@
   .contact,
   .about,
   .areas,
-  .product-banner {
+  .product-banner,
+  .product-description {
     padding-left: 14% !important;
     padding-right: 14% !important;
   }
@@ -295,7 +299,8 @@
 
 /********Home Category Products && Nosotro Middle Banner Section 3 ************/
   .home-products h3,
-  .contact h3 {
+  .contact h3,
+  .testimony h3 {
     margin-bottom: 70px;
     font-size: 2.53333333333em;
   }
@@ -315,6 +320,7 @@
     margin-top: -3%;
     width: 25%;
   }
+
   .testimony-p-1 {
     width: 74%;
   }

@@ -17,14 +17,9 @@
 
 Route::get('/', 'viewController@showHome')->name('home');
 Route::get('/nosotros', 'viewController@showNosotros')->name('nosotros');
+Route::get('/contacto', 'viewController@showContacto')->name('contactPage');
+
 Route::get('/movilidad&rehabilitacion', 'ProductContainerController@showProductMoviRehab')->name('productMoviRehab');
 Route::get('/ortopedia&protesis', 'ProductContainerController@showProductOrtoProt')->name('productOrtoPro');
 Route::get('/cirugia&implantes', 'ProductContainerController@showProductCiruImpla')->name('productCiruImpla');
 Route::get('/producto/{id}', 'ProductController@showProduct')->name('product');
-
-Route::get('productos', function () {
-  $productos = App\Product::where('category', '=', 'Movilidad y Rehabilitación')->paginate(4);
-
-  return view('containerPages.products.listado')
-            ->with('products',$productos);
-});

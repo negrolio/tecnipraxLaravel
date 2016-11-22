@@ -8,7 +8,7 @@ body {
   margin: 0;
   font-size: 15px;
   font-family: 'Montserrat', sans-serif!important;
-  background-image: url(../img/cork-wallet.png);
+  background-color: #D8D8D8;
 }
 .container {
   background-color: white;
@@ -70,7 +70,7 @@ ul {
   display: inline-block;
 }
 .main-nav a:hover {
-  color:#008cd4;
+  color:#7FF4C7;
 }
 .main-nav .last-li-nav {
   /*this is for elminate the space and the border when de toggle-nav is show*/
@@ -135,6 +135,7 @@ ul {
 
 /********Home Main Carousel && Nosotros Main Banner************/
 /********Product Banner*************/ /************Section 1************/
+/******** contact banner************/
 .all-banners{
   position: relative;
   overflow: hidden;
@@ -167,14 +168,16 @@ ul {
 }
 
 .main-banner h2,
-.nosotros-banner h2 {
+.nosotros-banner h2,
+.contact-banner h2 {
   font-size: 1.7em;
   line-height: 1em;
   margin: 0;
   font-weight: bold;
 }
 .main-banner h5,
-.nosotros-banner h5 {
+.nosotros-banner h5,
+.contact-banner h5 {
   font-size: 0.7em;
   font-weight: bold;
 }
@@ -190,6 +193,15 @@ ul {
   background-size: cover;
   background-position: center;
   padding: 10% 2%;
+}
+.contact-banner {
+  background-image: url(../img/contacto/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 6% 2%;
+  text-align: center;
+  font-size: 3em;
+  color: white;
 }
 
 .flecha {
@@ -261,7 +273,10 @@ ul {
   margin: 3px;
   font-size: 1.33333333333em;
 }
-
+.skills-section .button-banner {
+  color: white;
+  background-color: #00c09c;
+}
 .about {
   padding: 35px 7%;
   text-align: center;
@@ -275,44 +290,60 @@ ul {
   text-align: center;
   font-weight: bold;
   font-size: 2.5em;
-  text-transform: uppercase;
   color: #4e4e4e;
 }
 
 .containerProducts,
-.buttons-catalogo-product {
+.buttons-catalog-product {
   width: 80%;
   margin: auto;
 }
-.containerProducts {
+/*.containerProducts .carousel-inner .item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-.catalogo-product {
+}*/
+.catalog-product {
     width: 32%;
     padding: 0.5%;
     margin-top: 2%;
     background-color: #E3E3E3;
+    float: left;
+    height: 370px;
+    text-align: center;
+}
+.catalog-product:hover{
+    border: 3px solid #00c09c;
+}
+.catalog-product:nth-child(2),
+.catalog-product:nth-child(5) {
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
-.catalogo-product img {
-  width: 100%;
+.catalog-product img {
+  width: 100% !important;
 }
-.catalogo-product-title,
+.catalog-product-title,
 .catalogo-container {
   color: #585858;
 }
-.catalogo-product-title {
-  padding: 4%;
-}
-.catalago-product-title h2 {
+.catalog-product-title h4 {
   font-weight: bold;
   font-size: 1.5em;
   text-transform: uppercase;
 }
+.catalog-product-title input {
+  border: none;
+  background-color: white;
+  color: #00c09c;
+}
 
-.buttons-catalogo-product {
+.containerProducts ol {
+  padding: 0;
+  margin-top: 20px;
+}
+.buttons-catalog-product {
   display: flex;
   padding: 2% 0;
 }
@@ -334,10 +365,10 @@ ul {
 
 .product-description h2 {
   color: #00c09c;
-  text-align: center;
+  text-align: left;
 }
-.product-description p {
-  text-align: center;
+.product-description ul {
+  margin: 20px 0;
 }
 
 
@@ -364,6 +395,9 @@ ul {
   margin:20px auto;
   text-align: center;
   cursor: pointer;
+}
+.category-products:hover .category-title{
+  color: #7FF4C7;
 }
 .category-title {
   color: white;
@@ -396,7 +430,7 @@ ul {
 .areas h3 {
   text-align: center;
   color: #00be9c;
-  font-size: 1.7em;
+  font-size: 1.9em;
 }
 .img-testimony {
   width: 30%;
@@ -426,6 +460,7 @@ ul {
 
 
 /******** Home Banner Botton && Nosotros Carousel Section 5 ************/
+/******* indicator balls of carousel, nosotros, product **********/
 hr {
   width: 80%;
   color: #c3c3c3;
@@ -441,28 +476,56 @@ hr {
   display: none;
 }
 
-.carousel {
+.nosotros-carousel {
   margin-bottom: 140px;
 }
-.carousel-inner img {
+.img-carousel-nosotros,
+.img-carousel-product {
   width: 50%;
   margin: auto;
 }
-.carousel-indicators {
+.img-carousel-nosotros img,
+.img-carousel-product img {
+  width: 100%;
+}
+
+.nosotros-carousel .carousel-indicators,
+#productCarousel .carousel-indicators {
   position: absolute!important;
   bottom: -90px!important;
 }
-.carousel-indicators li {
+.nosotros-carousel .carousel-indicators li,
+#productCarousel .carousel-indicators li {
   background-color: #9E9E9E!important;
   border: none!important;
   width: 15px!important;
   height: 15px!important;
   margin-right: 10px!important;
 }
-.carousel-indicators .active {
+.nosotros-carousel .carousel-indicators .active,
+#productCarousel .carousel-indicators .active {
   background-color: #00A788!important;
 }
 
+.indicator-next-prev-product {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+.indicator-next-prev-product span{
+  color: #00c09c;
+  font-size: 3em;
+}
+.indicator-next-prev-product a.left{
+  left: 7%;
+}
+.indicator-next-prev-product a.right{
+  right: 7%;
+}
+
+#productCarousel {
+  margin-bottom: 9%;
+}
 
 
 
@@ -519,9 +582,16 @@ hr {
 /******** Footer ************/
 .main-footer {
   background-color: #00be9c;
-  text-align: center;
-  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  padding: 4% 14%;
 }
+
+.left-footer img {
+  width: 235px;
+}
+
+/*
 .main-footer img{
   width: 40vh;
   max-width: 200px;
@@ -531,14 +601,41 @@ hr {
   width: 7vh;
   max-width: 40px;
   margin: 3px;
-}
+}*/
 .main-footer p {
   margin: 0;
-  font-size: 0.7em;
   color: white;
-  margin-top: 20px;
-  font-weight: bold;
 }
 .main-footer span{
-  font-weight: normal;
+  font-weight: bold;
+}
+
+.contact-info {
+  margin: 15px;
+}
+.location-info {
+  margin-left: 15px;
+}
+.right-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 2.5%;
+  text-align: right;
+}
+
+.button-facebook {
+  border: 2px solid white;
+  display: inline-block;
+  border-radius: 8px;
+  color: white;
+  padding: 0 12px;
+}
+.button-facebook:hover {
+  background-color: white;
+  color: #00be9c;
+}
+.icon-facebook-circled {
+  font-size: 3em;
+  vertical-align: middle;
 }

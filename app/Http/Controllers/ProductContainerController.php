@@ -11,7 +11,7 @@ class ProductContainerController extends Controller
 
       $productos = Product::where('category', '=', 'Movilidad y Rehabilitación')->get();
 
-      return view('containerPages/products/catalogContainer')
+      return view('containerPages/products/catalog')
                 ->with('products',$productos);
 
 
@@ -21,14 +21,14 @@ class ProductContainerController extends Controller
 
       $productos = Product::where('category', '=', 'Ortopedia y Prótesis')->get();
 
-      return view('containerPages/products/catalogContainer')
+      return view('containerPages/products/catalog')
                 ->with('products',$productos);
     }
 
     public function showProductCiruImpla(){
       $productos = Product::where('category', '=', 'Cirugía e Implantes')->get();
 
-      return view('containerPages/products/catalogContainer')
+      return view('containerPages/products/catalog')
                 ->with('products',$productos);
     }
 }

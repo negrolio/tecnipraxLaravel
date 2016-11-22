@@ -23,7 +23,7 @@
 </section>
 
 <section class="catalogo-container">
-  @yield('sectionShowProducts')
+  @yield('sectionShowCatalog')
 </section>
 
 @endsection

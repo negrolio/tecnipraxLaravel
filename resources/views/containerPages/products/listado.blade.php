@@ -1,15 +1,14 @@
-<h2>{{--$products[0]->category--}}</h2>
 
-<section>
-  <div class="containerProducts">
 
     @forelse ($products as $product)
-      <article class="catalogo-product">
+      <article class="catalog-product">
         <a href="{{route('product',$product->id)}}">
-          <img src="{{$product->img_url }}" alt="producto" />
-          <div class="catalogo-product-title">
+          <div class="img-container-catalog">
+            <img src="{{$product->img_url }}" alt="producto" />
+          </div>
+          <div class="catalog-product-title">
             <h4>{{$product->name }}</h4>
-            <p>{{$product->description}}</p>
+            <input type="button" name="name" value="VER MAS">
           </div>
         </a>
       </article>
@@ -20,5 +19,8 @@
       </div>
     @endforelse
 
-  </div>
-</section>
+    @if ($products->count() < 4)
+      <article class="catalog-product" style="visibility:hidden"></article>
+      <article class="catalog-product" style="visibility:hidden"></article>
+      <article class="catalog-product" style="visibility:hidden"></article>
+    @endif

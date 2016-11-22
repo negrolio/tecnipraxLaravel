@@ -23,7 +23,7 @@
               <li><a href="{{route('productCiruImpla')}}">Cirugía e Implantes</a></li>
           </ul>
       </li>
-      <li><a href="#" class="last-li-nav">Contacto</a></li>
+      <li><a href="{{route('contactPage')}}" class="last-li-nav">Contacto</a></li>
     </ul>
   </nav>
 

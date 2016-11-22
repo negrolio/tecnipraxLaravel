@@ -1,9 +1,26 @@
 <footer class="main-footer">
-  <img src="/img/home/pie-logo.png" alt="tecniprax">
-  <div class="socials">
-    <a href="#"><img src="/img/home/pie-icono-face.png" alt="facebook"></a>
-    <a href="#"><img src="/img/home/pie-icono-go.png" alt="google-plus"></a>
-    <a href="#"><img src="/img/home/pie-icono-tw.png" alt="twitter"></a>
+
+  <div class="left-footer">
+    <img src="/img/home/pie-logo.png" alt="tecniprax">
+    <div class="contact-info">
+      <p>Tel.<span>+54 11 4637383</span></p>
+      <p>Mail.<span>info@tecniprax.com.ar</span></p>
+    </div>
+    <div class="location-info">
+      <p>Azcuenaga 334, CABA,</p>
+      <p>Buenos Aires, Argentina.</p>
+    </div>
   </div>
-  <p>Diseño web: <span>Alfredo Kohan</span></p>
+
+  <div class="right-footer">
+    <a href="https://www.facebook.com/tecniprax.srl">
+      <div class="button-facebook">
+        {{-- <img src="/img/home/pie-icono-face.png" alt="facebook"> --}}
+        <span class="icon-facebook-circled"></span>
+        <span>Seguinos en Facebook!</span>
+      </div>
+    </a>
+
+    <p>Diseño web: <span>Alfredo Kohan</span></p>
+  </div>
 </footer>
