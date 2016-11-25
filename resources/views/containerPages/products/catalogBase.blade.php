@@ -2,9 +2,7 @@
 
 @section('containerPage')
 
-<section class="product-banner">
-  @yield('contentBanner')
-</section>
+@yield('contentBanner')
 
 <section class="catalogo-container">
   @yield('sectionShowCatalog')

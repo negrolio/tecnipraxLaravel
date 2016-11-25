@@ -63,7 +63,7 @@
       <p>{{$product->description}}</p>
     </section>
 
-    @include('containerPages.contactForm')
+    @include('containerPages.contactForm',['contactPage'=>'false'])
 
   </section>
 @endsection

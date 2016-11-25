@@ -9,8 +9,8 @@
     <h2>CONTACTO</h2>
     <h5>ESPERAMOS SU CONSULTA!</h5>
   </section>
-
-  @include('containerPages.contactForm')
+  
+  @include('containerPages.contactForm',['contactPage'=>'true'])
 
   <div id="map" style="width:100%;height:300px"></div>
 @endsection

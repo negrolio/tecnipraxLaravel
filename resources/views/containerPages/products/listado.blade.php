@@ -19,8 +19,8 @@
       </div>
     @endforelse
 
-    @if ($products->count() < 4)
+    {{-- @if ($products->count() < 4)
       <article class="catalog-product" style="visibility:hidden"></article>
       <article class="catalog-product" style="visibility:hidden"></article>
       <article class="catalog-product" style="visibility:hidden"></article>
-    @endif
+    @endif --}}

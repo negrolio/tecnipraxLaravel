@@ -11,14 +11,18 @@ jQuery(document).ready(function ($) {
   var actualBanner = $('#main-banner1');
   var leftBanner   = $('#main-banner3');
   var rightBanner  = $('#main-banner2');
+	var actualTitle  = actualBanner.find("h2")
+	var actualSubTitle = actualBanner.find("h5")
 
   orderBanner();
+	fadeInOutTitleAndButton();
   var quieto = true;
 
     function moveLeft() {
 			if (quieto) {
 				quieto = false;
 				momentaryLeft = leftBanner;
+				fadeInOutTitleAndButton()
 
 				actualBanner.parent().animate({
 					right: '100%'
@@ -42,6 +46,7 @@ jQuery(document).ready(function ($) {
 			if (quieto) {
 				quieto = false;
 				momentaryRigth = rightBanner;
+				fadeInOutTitleAndButton()
 
 				actualBanner.parent().animate({
 					right:"-100%"
@@ -62,17 +67,62 @@ jQuery(document).ready(function ($) {
     };
 
     function orderBanner(){
-      actualBanner.parent().css("right","0");
-      leftBanner.parent().css("right","100%");
+      actualBanner.parent().css({
+				"right":"0",
+				"z-index":"0"});
+      leftBanner.parent().css({
+				"right":"100%",
+				"z-index":"2"});
       rightBanner.parent().css("right","-100%")
+			actualTitle.css("left","0")
+			actualSubTitle.css("right","0")
+
     }
 
+		function moveTitle(){
+			if (quieto) {
+				actualTitle  = actualBanner.find("h2")
+				actualSubTitle = actualBanner.find("h5")
+				actualTitle.css("position", "relative").animate({
+					left:"-150%"
+				});
+				actualSubTitle.css("position", "relative").animate({
+					right:"-150%"
+				});
+			}
+		}
+
+		function fadeInOutTitleAndButton(){
+			$('.div-title1 h2,.div-title1 h5').css({
+				"visibility":"hidden"
+			})
+			$('.div-title1 .button-banner').css({"top":"255px"})
+			setTimeout(function(){
+				$('.div-title1 h2,.div-title1 h5').css('visibility','visible').hide().fadeIn('slow');
+				$('.div-title1 .button-banner').animate({top:"0"})
+			},400)
+		}
+
     $('.flecha-izq').click(function () {
-			moveRight();
+			moveTitle()
+			setTimeout(function(){
+				moveRight()
+			},400);
+
+
+			// setTimeout(function(){
+			// 	$('.div-title1 h2').css({
+			// 		"visibility":"visible",
+			// 		"left":"0"
+			// 	})
+			// },300)
     });
 
     $('.flecha-der').click(function () {
-			moveLeft();
+			moveTitle()
+			setTimeout(function(){
+				moveLeft()
+			},200);
     });
 
 });

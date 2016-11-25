@@ -5,9 +5,13 @@
   {{$products[0]->category}}
 @endsection
 
-{{-- send the category because the icons in the banner only had to appear in one page --}}
+{{-- if the category is movilidad y rehabilitacion the background-image is other --}}
 @section('contentBanner')
-  @include('containerPages.products.iconos', ['content' => $products[0]->category])
+  <section class="product-banner" @if ($products[0]->category=='Movilidad y Rehabilitación')
+    style="background-image:url(../img/productos/cabecera1.jpg)"@endif>
+  {{-- send the category because the icons in the banner only had to appear in one page --}}
+      @include('containerPages.products.iconos', ['content' => $products[0]->category])
+  </section>
 @endsection
 
 @section('sectionShowCatalog')
@@ -18,7 +22,7 @@
       <div class="carousel-inner" role="listbox">
 
         {{-- {{dd($products->chunk(6))}} --}}
-        @foreach ($products->chunk(6) as $someProducts)
+        @foreach ($products->chunk(9) as $someProducts)
             <div class="item @if ($loop->first) active @endif" >
               @include('containerPages.products.listado', ['products' => $someProducts])
             </div>
@@ -26,7 +30,7 @@
       </div>
 
       <ol>
-        @for ($i=0; $i < $products->count()/6 ; $i++)
+        @for ($i=0; $i < $products->count()/9 ; $i++)
           <button class="button-catalogo-page" data-target="#catalogCarousel" data-slide-to="{{$i}}">
             {{$i + 1}}
           </button>

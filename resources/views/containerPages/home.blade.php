@@ -42,7 +42,7 @@
               <article class="inter-banner">
                 <div class="div-title1">
                   <h2>CIRUGÍA<br> E IMPLANTES</h2>
-                  <h5>una buena rehabilitación comienza usando productos de calidad!</h5>
+                  <h5>El mejor producto y el mejor servicio!</h5>
                   <a href="{{route('productCiruImpla')}}"><input type="button" class="button-banner" value="conocelos     >"></a>
                 </div>
               </article>
@@ -63,17 +63,17 @@
           <article class="skills-articles">
             <img src="img/home/icono-val1.jpg" alt="experiencia"/>
             <h4>EXPERIENCIA</h4>
-            <p>10 años de fabricación nos avalan. Trabajamos con prestigiosos hospitales y obras sociales.</p>
+            <p>20 años de fabricación nos avalan. Trabajamos con prestigiosos hospitales y obras sociales.</p>
           </article>
           <article class="skills-articles">
             <img src="img/home/icono-val3.jpg" alt="en todo el pais"/>
             <h4>EN TODO EL PAÍS</h4>
-            <p>Trabajamos con pacientes de toda la Argentina. Nuestro objetivo es seguir expandiendose</p>
+            <p>Trabajamos con pacientes de toda la Argentina. Nuestro objetivo es seguir expandiendonos</p>
           </article>
         </div>
 
-        <a href="{{route('nosotros')}}"><input type="button" class="button-banner" value="conoce mas     >"></a>
-        
+        <a href="{{route('nosotros')}}"><input type="button" class="button-banner" value="conocé más     >"></a>
+
       </section>
 
       {{-- Section 3 --}}
@@ -155,7 +155,7 @@
       <hr>
 
       {{-- Section 6 --}}
-      @include('containerPages.contactForm')
+      @include('containerPages.contactForm',["contactPage"=>"false"])
     </div>
 
 @endsection

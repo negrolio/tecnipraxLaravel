@@ -2,6 +2,14 @@
 
 jQuery(document).ready(function ($) {
 
+	// $('.div-title1 h2').css({
+	// 	"visibility":"hidden"
+	// })
+	//
+	// setTimeout(function(){
+	// 	$('.div-title1 h2').css('visibility','visible').hide().fadeIn('slow');
+	// },400)
+
 	$('.toggle-nav').click(function(){
 		$('.main-nav').toggle(1000);
 	});

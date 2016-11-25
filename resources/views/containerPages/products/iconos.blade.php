@@ -4,15 +4,15 @@
   <div class="skills-section-products">
     <div class="skills-articles-products">
       <img src="img/productos/iconoGente.png" alt="conversacion"/>
-      <p>Nos contas tus necesidades y te asesoramos sobre el modelo a utilizar</p>
+      <p>Nos contás tus necesidades y te asesoramos sobre el modelo a utilizar</p>
     </div>
     <div class="skills-articles-products">
       <img src="img/productos/iconoCasa.png" alt="sweet home"/>
-      <p>Nos contas tus necesidades y te asesoramos sobre el modelo a utilizar</p>
+      <p>Visitamos tu casa y tomamos medidas del ámbito en que vivís</p>
     </div>
     <div class="skills-articles-products">
       <img src="img/productos/iconoTarjetas.png" alt="personal"/>
-      <p>Nos contas tus necesidades y te asesoramos sobre el modelo a utilizar</p>
+      <p>Personalizás colores tamaños y prestaciones</p>
     </div>
   </div>
 </div>
