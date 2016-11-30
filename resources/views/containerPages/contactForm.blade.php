@@ -10,7 +10,7 @@
     </form>
 
     <article class="location">
-      <div><img src="/img/home/contacto-icono1.jpg" alt="ubicacion">Azcuénaga 334, CABA</div>
+      <div><img src="/img/home/contacto-icono1.jpg" alt="ubicacion">Azcuénaga 721, CABA</div>
       <div><img src="/img/home/contacto-icono2.jpg" alt="email">info@tecniprax.com.ar</div>
       <div><img src="/img/home/contacto-icono3.jpg" alt="tel">+54 11 4637383</div>
     </article>

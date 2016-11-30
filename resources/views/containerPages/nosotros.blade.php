@@ -50,7 +50,7 @@
           <article class="area3">
             <h4>3. EXPANSIÓN Y CRECIMIENTO</h4>
             <p>
-              En la idea de seguir avanzando con nuestro proyecto en el año 2014 Ortopedia Tecniprax decide la apertura de la oficina comercial en Entre Ríos, a fin de poder brindar una mejor atención a los profesionales e instituciones de la Provincia. La misma está ubicada en la ciudad de Concordia en el mismo sitio donde desde hace años funciona nuestra fábrica.
+              Una vez terminado el producto y antes de la entrega definitiva lo visitamos nuevamente para testear su correcta adaptabilidad al paciente.
             </p>
           </article>
 

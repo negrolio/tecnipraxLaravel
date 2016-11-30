@@ -318,6 +318,12 @@ ul {
   font-size: 1.3em;
 }
 
+.products-title-and-logo {
+  text-align: center;
+}
+.products-title-and-logo img {
+  border-top: solid 2px #e3e3e3;
+}
 .catalogo-container h2,
 .containerProduct h2 {
   text-align: center;

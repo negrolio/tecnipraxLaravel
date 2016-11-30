@@ -15,7 +15,11 @@
 @endsection
 
 @section('sectionShowCatalog')
-  <h2>{{$products[0]->category}}</h2>
+  <div class="products-title-and-logo">
+    <h2>{{$products[0]->category}}</h2>
+    <p>Distribución de Productos:</p>
+    <img src="/img/productos/logos.jpg" alt="" />
+  </div>
   <section>
     <div id="catalogCarousel" class="containerProducts carousel slide" data-ride="carousel" data-interval="false">
 
