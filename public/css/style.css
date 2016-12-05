@@ -322,7 +322,7 @@ ul {
   text-align: center;
 }
 .products-title-and-logo img {
-  border-top: solid 2px #e3e3e3;
+  border-top: solid 1px #e3e3e3;
 }
 .catalogo-container h2,
 .containerProduct h2 {
@@ -614,10 +614,12 @@ hr {
 .location div {
   color: #5A5A5A;
   margin-bottom: 5px;
+  text-align: center;
+  padding: 2% 0;
 }
 .location img {
-  vertical-align: middle;
-  margin-right: 10px;
+  display: block;
+  margin: auto;
 }
 
 

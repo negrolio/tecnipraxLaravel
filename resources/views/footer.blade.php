@@ -7,7 +7,7 @@
       <p>Mail.<span>info@tecniprax.com.ar</span></p>
     </div>
     <div class="location-info">
-      <p>Azcuenaga 334, CABA,</p>
+      <p>Azcuenaga 721 / 717 / 719. CABA.</p>
       <p>Buenos Aires, Argentina.</p>
     </div>
   </div>

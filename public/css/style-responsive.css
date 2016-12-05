@@ -154,7 +154,7 @@
   }
   .area-left {
     padding-right: 20px;
-    width: 107%;
+    width: 107%  ;
   }
   .area3 {
     padding-left: 20px;
@@ -181,16 +181,31 @@
 
   .contact-article-flex{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   #contactForm {
     width: 50%;
   }
   .location {
-    width: 24%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .location div {
     margin-bottom: 15px;
+    text-align: left;
+    padding: 0;
+  }
+  .location span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .location img {
+    vertical-align: middle;
+    margin-right: 10px;
+    display: inline;
+    margin: 0;
   }
 }
 
