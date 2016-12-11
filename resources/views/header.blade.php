@@ -1,10 +1,15 @@
 <header class="main-header">
   <a href="{{route('home')}}"><img src="/img/home/logo.png" alt="tecniprax" class="main-logo"></a>
 
-  <a href="#" class="toggle-nav">
+  {{-- <a href="#" class="toggle-nav">
     <span class="glyphicon glyphicon-menu-hamburger"></span>
-    {{-- <img src="/img/menuWhite.png" alt="" /> --}}
-  </a>
+  </a> --}}
+  <div id="nav-icon3" class="toggle-nav">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
   <div style='clear:both'></div>
 
@@ -23,7 +28,7 @@
               <li><a href="{{route('productCiruImpla')}}">Cirugía e Implantes</a></li>
           </ul>
       </li>
-      <li><a href="{{route('contactPage')}}" class="last-li-nav">Contacto</a></li>
+      <li class="last-li-nav"><a href="{{route('contactPage')}}">Contacto</a></li>
     </ul>
   </nav>
 

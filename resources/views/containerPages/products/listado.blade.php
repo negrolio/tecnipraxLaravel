@@ -8,8 +8,8 @@
           </div>
           <div class="catalog-product-title">
             <h4>{{$product->name }}</h4>
-            <input type="button" name="name" value="VER MAS">
           </div>
+          <input type="button" name="name" value="VER MAS">
         </a>
       </article>
 

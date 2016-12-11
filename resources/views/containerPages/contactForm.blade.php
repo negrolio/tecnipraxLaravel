@@ -13,8 +13,8 @@
           CABA.
         </span>
       </div>
-      <div><img src="/img/contacto/contacto-icono2.jpg" alt="email">info@tecniprax.com.ar</div>
-      <div><img src="/img/contacto/contacto-icono3.jpg" alt="tel">+54 11 4637383</div>
+      <div><img src="/img/contacto/contacto-icono2.jpg" alt="email"><span>info@tecniprax.com.ar</span></div>
+      <div><img src="/img/contacto/contacto-icono3.jpg" alt="tel"><span>+54 11 4637383</span></div>
       <div>
         <img src="/img/contacto/contacto-icono4.jpg" alt="Fabricacion">
         <span>

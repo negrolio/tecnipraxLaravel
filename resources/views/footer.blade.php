@@ -3,8 +3,8 @@
   <div class="left-footer">
     <img src="/img/home/pie-logo.png" alt="tecniprax">
     <div class="contact-info">
-      <p>Tel.<span>+54 11 4637383</span></p>
-      <p>Mail.<span>info@tecniprax.com.ar</span></p>
+      <p>Tel.<b>+54 11 4637383</b></p>
+      <p>Mail.<b>info@tecniprax.com.ar</b></p>
     </div>
     <div class="location-info">
       <p>Azcuenaga 721 / 717 / 719. CABA.</p>
@@ -21,6 +21,6 @@
       </div>
     </a>
 
-    <p>Diseño web: <span>Alfredo Kohan</span></p>
+    <p>Diseño web: <b>Alfredo Kohan</b></p>
   </div>
 </footer>
