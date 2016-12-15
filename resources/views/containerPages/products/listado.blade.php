@@ -8,6 +8,14 @@
           </div>
           <div class="catalog-product-title">
             <h4>{{$product->name }}</h4>
+
+            {{-- this is for make all the box width the same height, 49 is the lengt of the largest name at the moment --}}
+            {{-- <span style="visibility:hidden;font-size:1.3em">
+              @if (strlen($product->name) < 49)
+                {{str_random(48 - strlen($product->name))}}
+              @endif
+            </span> --}}
+
           </div>
           <input type="button" name="name" value="VER MAS">
         </a>

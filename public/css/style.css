@@ -274,7 +274,7 @@ ul {
 .main-banner h2,
 .nosotros-banner h2,
 .contact-banner h2 {
-  font-size: 1.7em;
+  font-size: 1.3em;
   line-height: 1em;
   margin: 0;
   font-weight: bold;
@@ -282,7 +282,7 @@ ul {
 .main-banner h5,
 .nosotros-banner h5,
 .contact-banner h5 {
-  font-size: 0.7em;
+  font-size: 0.3em;
   font-weight: bold;
 }
 
@@ -296,7 +296,6 @@ ul {
   background-image: url(../img/quienes-somos/banner1.jpg);
   background-size: cover;
   background-position: center;
-  padding: 10% 2%;
 }
 .contact-banner {
   background-image: url(../img/contacto/banner.jpg);
@@ -412,7 +411,7 @@ ul {
   font-weight: bold;
 }
 .about p {
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .products-title-and-logo {
@@ -446,9 +445,10 @@ ul {
     margin-top: 2%;
     background-color: #E3E3E3;
     float: left;
-    height: 370px;
+    /*height: 370px;*/
     text-align: center;
     position: relative;
+    border: 3px solid transparent;
 }
 .catalog-product:hover{
     border: 3px solid #00c09c;
@@ -469,14 +469,19 @@ ul {
   font-weight: bold;
   font-size: 1.3em;
   text-transform: uppercase;
+  height: 95px;
 }
 .catalog-product input {
   border: none;
   background-color: white;
   color: #00c09c;
-  position: absolute;
+  /*position: absolute;
   bottom: 10%;
-  left: 32%;
+  left: 50%;
+  transform: translate(-50%, 0);*/
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #4E4E4E;
+  margin-bottom: 20px;
 }
 
 .containerProducts ol {
@@ -503,6 +508,10 @@ ul {
   font-weight: bold;
 }
 
+.product-description {
+  padding: 0 5%;
+  text-align: justify;
+}
 .product-description h2 {
   color: #00c09c;
   text-align: left;
@@ -586,10 +595,15 @@ ul {
   color: #ff336d;
 }
 
+.areas {
+  padding: 0 7%;
+  text-align: justify;
+}
 .areas h4 {
   text-align: center;
   font-size: 1.2em;
   color: #5A5A5A;
+  margin: 30px;
 }
 .areas img {
   display: none;
@@ -629,10 +643,15 @@ hr {
   width: 100%;
 }
 
-.nosotros-carousel .carousel-indicators,
+/*.nosotros-carousel .carousel-indicators,
 #productCarousel .carousel-indicators {
   position: absolute!important;
   bottom: -90px!important;
+}*/
+.nosotros-carousel .carousel-indicators,
+#productCarousel .carousel-indicators {
+  position: absolute!important;
+  bottom: -44%!important;
 }
 .nosotros-carousel .carousel-indicators li,
 #productCarousel .carousel-indicators li {
@@ -663,8 +682,11 @@ hr {
   right: 7%;
 }
 
-#productCarousel {
+/*#productCarousel {
   margin-bottom: 9%;
+}*/
+#productCarousel {
+  margin-bottom: 20%;
 }
 
 
@@ -672,7 +694,8 @@ hr {
 /******** Contact Form Section 6 ************/
 
 .contact {
-  padding: 0 20px;
+  /*padding: 0 20px;*/
+  padding: 7%;
   margin-bottom: 40px;
 }
 .contact h3 {

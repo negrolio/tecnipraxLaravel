@@ -1,5 +1,18 @@
 <section class="contact">
   <h3 @if ($contactPage == 'true') style="display:none" @endif>CONTACTO</h3>
+
+    @if(session('mensaje_exitoso'))
+      <div class="alert alert-success">
+          {{ session('mensaje_exitoso') }}
+      </div>
+    @endif
+
+    @if(session('mensaje_error'))
+      <div class="alert alert-danger">
+          {{ session('mensaje_error') }}
+      </div>
+    @endif
+
   <div class="contact-article-flex">
 
     @include('containerPages.form')

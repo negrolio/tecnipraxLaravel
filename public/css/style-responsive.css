@@ -5,6 +5,10 @@
     padding: 38% 2%;
   }
 
+  .nosotros-banner {
+    padding: 10% 2%;
+  }
+
   .flecha {
     padding-top: 10px;
   }
@@ -51,8 +55,16 @@
     margin-right: 5%;
   }
 
+  /******** Home Skills && Nosotros About
+  /******** Product Catalogo **********Section 2 ************/
+  /******** Product *********/
 
-
+.catalog-product {
+  width: 49%;
+}
+ .catalog-product:nth-child(odd) {
+   margin-right: 1%;
+ }
 /********Home Category Products && Nosotro Middle Banner Section 3 ************/
   .home-products {
     padding-bottom: 11%;
@@ -77,6 +89,19 @@
   /*********footer*******/
   .right-footer span:nth-child(2){
     display: inline;
+  }
+
+  /******** Home Banner Botton && Nosotros Carousel Section 5 ************/
+  /******* indicator balls of carousel, nosotros, product **********/
+
+  .nosotros-carousel .carousel-indicators,
+  #productCarousel .carousel-indicators {
+    position: absolute!important;
+    bottom: -19%!important;
+  }
+
+  #productCarousel {
+    margin-bottom: 9%;
   }
 }
 
@@ -338,6 +363,13 @@
     width: 30%;
   }*/
 
+  .contact-banner h2 {
+    font-size: 1.7em;
+  }
+  .contact-banner h5 {
+    font-size: 0.7em;
+  }
+
 /******** Home Skills && Nosotros About Section 2 ************/
 
   .about h3 {
@@ -345,11 +377,15 @@
   }
   .about p {
     text-align: center;
+    font-size: 1.3em;
   }
 
   .catalog-product {
     width: 32%;
-    height: 370px;
+    /*height: 370px;*/
+  }
+  .catalog-product:nth-child(odd) {
+    margin-right: 0;
   }
   .catalog-product:nth-child(2),
   .catalog-product:nth-child(5),
@@ -391,13 +427,15 @@
     margin: 5% 0;
   }
 
-/******** Home Banner Botton && Nosotros Carousel Section 5 ************/
+  /******** Home Banner Botton && Nosotros Carousel Section 5 ************/
+  /******* indicator balls of carousel, nosotros, product **********/
   hr {
     display: none;
   }
   .foot-banner {
     display: inherit;
   }
+
 
   /****************Footer ***************/
 

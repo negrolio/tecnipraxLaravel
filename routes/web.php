@@ -23,3 +23,5 @@ Route::get('/movilidad&rehabilitacion', 'ProductContainerController@showProductM
 Route::get('/ortopedia&protesis', 'ProductContainerController@showProductOrtoProt')->name('productOrtoPro');
 Route::get('/cirugia&implantes', 'ProductContainerController@showProductCiruImpla')->name('productCiruImpla');
 Route::get('/producto/{id}', 'ProductController@showProduct')->name('product');
+
+Route::post('/send', 'EmailController@sendEmail')->name('sendMail');
